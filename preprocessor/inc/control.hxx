@@ -8,3 +8,7 @@
 
 #define IFF_BOOM_0(true_clause, false_clause) false_clause
 #define IFF_BOOM_1(true_clause, false_clause) true_clause
+
+#define EMPTY()
+#define APPLY(m) m ()
+#define DEFER(m) m EMPTY() ()
